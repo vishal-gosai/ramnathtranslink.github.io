@@ -1,0 +1,371 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #a41b1b;
+    padding: 0 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Testimonial Styles */
+.testimonial {
+    margin-top: 20px;
+    border-left: 4px solid #333;
+    padding-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li i {
+    margin-right: 10px;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    margin-bottom: 50px !important; /* Increased margin to accommodate indicators */
+    height: 500px !important; /* Increased height */
+}
+
+.slider .slides {
+    background-color: transparent;
+    height: 500px !important; /* Match slider height */
+}
+
+.slider .slides li img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain !important; /* Changed from cover to contain */
+    background-color: #f5f5f5; /* Light background for empty spaces */
+}
+
+.slider .indicators {
+    position: relative !important;
+    bottom: -10px !important;
+    z-index: 2;
+    margin: 0;
+}
+
+.slider .indicators .indicator-item {
+    margin: 0 8px !important;
+    position: relative !important;
+    bottom: -25px !important;
+    background-color: #e0e0e0 !important;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #009688;
+}
+
+.slider .slides li.active {
+    z-index: 2;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slider .slides li {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    height: calc(100% - 40px) !important; /* Reduced height to make room for indicators */
+}
+
+.social-links a {
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+social-links a:hover {
+    opacity: 0.8;
+}
+
+.footer-copyright {
+    padding: 20px 0;
+}
+
+/* Navigation and Menu Styles */
+.sidenav li > a, #nav-mobile li > a {
+    color: #AE4A84 !important;
+    font-weight: 700 !important;
+    font-size: 1.44rem !important;
+}
+
+/* Header and Navigation Height */
+nav {
+    height: 100px !important;
+    line-height: 100px !important;
+}
+
+nav i, 
+nav [class^="mdi-"], 
+nav [class*="mdi-"], 
+nav i.material-icons {
+    height: 100px !important;
+    line-height: 100px !important;
+}
+
+nav .button-collapse i {
+    height: 100px !important;
+    line-height: 100px !important;
+}
+
+/* Logo Styles */
+.brand-logo img {
+    height: 92px !important;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+/* Slider Indicator Styles */
+.slider .indicators .indicator-item {
+    background-color: #e0e0e0 !important;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #AE4A84 !important;
+}
+
+/* Theme Color Utility Classes */
+.theme-text {
+    color: #AE4A84;
+}
+
+.theme-bg {
+    background-color: #AE4A84;
+}
+
+.theme-bg-light {
+    background-color: #AE4A8420;
+}
+
+/* Responsive Navigation */
+@media only screen and (min-width: 601px) {
+    nav, 
+    nav .nav-wrapper i, 
+    nav a.button-collapse, 
+    nav a.button-collapse i {
+        height: 100px !important;
+        line-height: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .social-links {
+        margin-bottom: 30px;
+    }
+}
+
+/* Client Section Styles */
+.client-card {
+    transition: transform 0.3s ease;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(174, 74, 132, 0.2);
+}
+
+.client-card .card-content {
+    width: 100%;
+}
+
+.client-card h5 {
+    margin: 15px 0 5px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.client-card .material-icons.large {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .client-card {
+        height: 180px;
+    }
+    
+    .client-card h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Subsidiary Section Styles */
+.subsidiary-card {
+    transition: transform 0.3s ease;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.subsidiary-card:hover {
+    transform: translateY(-5px);
+}
+
+.subsidiary-card .card-image {
+    padding: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subsidiary-card .card-image img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.subsidiary-card .card-content {
+    padding-top: 10px;
+}
+
+.subsidiary-card h5 {
+    color: #AE4A84;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.subsidiary-card p {
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .subsidiary-card .card-image {
+        height: 100px;
+    }
+    
+    .subsidiary-card .card-image img {
+        max-height: 80px;
+    }
+}
+
+/* Contact Section Styles */
+.contact-card {
+    padding: 20px;
+    height: 100%;
+}
+
+.contact-card h5 {
+    color: #AE4A84;
+    margin: 20px 0;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.page-footer {
+    padding: 20px 0;
+}
+
+/* Adjust for mobile devices */
+@media only screen and (max-width: 600px) {
+    .slider, .slider .slides {
+        height: 300px !important;
+    }
+}
+
+/* Floating Action Button Styles */
+.fixed-action-btn {
+    position: fixed !important;
+    right: 23px !important;
+    bottom: 23px !important;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+
+.btn-floating {
+    transition: all 0.3s ease;
+}
+
+.btn-floating:hover {
+    transform: scale(1.1);
+    background-color: #AE4A84 !important;
+}
+
+.btn-floating.btn-large {
+    width: 56px;
+    height: 56px;
+    background-color: #AE4A84;
+}
+
+.btn-floating.btn-large i {
+    line-height: 56px;
+    color: white;
+}
+
+#about .flow-text {
+    text-align: justify;
+}
+
+#founder .flow-text {
+    text-align: justify;
+}

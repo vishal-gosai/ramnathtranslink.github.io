@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMNATH GROUP</title>
+    <!-- Add favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <!-- Import Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .sidenav li>a,
+        #nav-mobile li>a {
+            color: #AE4A84 !important;
+            font-weight: 700 !important;
+            /* Changed from 500 to 700 for bolder text */
+            font-size: 1.44rem !important;
+            /* Increased from 1.2rem by 20% */
+        }
+
+        /* Update nav height to accommodate larger logo */
+        nav {
+            height: 100px !important;
+            /* Increased from 85px */
+            line-height: 100px !important;
+        }
+
+        nav i,
+        nav [class^="mdi-"],
+        nav [class*="mdi-"],
+        nav i.material-icons {
+            height: 100px !important;
+            line-height: 100px !important;
+        }
+
+        nav .button-collapse i {
+            height: 100px !important;
+            line-height: 100px !important;
+        }
+
+        @media only screen and (min-width: 601px) {
+
+            nav,
+            nav .nav-wrapper i,
+            nav a.button-collapse,
+            nav a.button-collapse i {
+                height: 100px !important;
+                line-height: 100px !important;
+            }
+        }
+
+        /* Add styles for logo */
+        .brand-logo img {
+            height: 92px !important;
+            /* Increased from 77px by 20% */
+            padding: 5px;
+            margin-top: 2px;
+        }
+
+        /* Customize slider indicators */
+        .slider .indicators .indicator-item {
+            background-color: #e0e0e0 !important;
+        }
+
+        .slider .indicators .indicator-item.active {
+            background-color: #AE4A84 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="purple lighten-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <img src="images/RAMNATH_GROUP.png" alt="RAMNATH GROUP" class="brand-logo img">
+                    </a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Add this new slider section -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="/images/photo1.jpeg" alt="Ramnath Group Photo 1">
+            </li>
+            <li>
+                <img src="/images/photo2.jpeg" alt="Ramnath Group Photo 2">
+            </li>
+            <li>
+                <img src="/images/photo3.jpeg" alt="Ramnath Group Photo 3">
+            </li>
+            <li>
+                <img src="/images/photo4.jpeg" alt="Ramnath Group Photo 4">
+            </li>
+            <li>
+                <img src="/images/photo5.jpeg" alt="Ramnath Group Photo 5">
+            </li>
+            <li>
+                <img src="/images/photo6.jpeg" alt="Ramnath Group Photo 6">
+            </li>
+        </ul>
+    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="theme-text">RAMNATH GROUP</h2>
+            <p class="flow-text">Welcome to Ramnath Group - Your Trusted Partner in Transportation Excellence since
+                1980. As one of Gujarat's leading transport and logistics solution providers, we deliver reliability,
+                efficiency, and innovation in every journey. Our fleet of well-maintained vehicles, experienced drivers,
+                and state-of-the-art tracking systems ensure your cargo reaches its destination safely and on time.</p>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large theme-text">local_shipping</i>
+                        <h5>Pan-India Network</h5>
+                        <p>Extensive coverage across all major cities and industrial hubs</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large" style="color: #AE4A84">verified</i>
+                        <h5>48+ Years of Excellence</h5>
+                        <p>Decades of experience in delivering quality logistics solutions</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large" style="color: #AE4A84">security</i>
+                        <h5>Safe & Secure</h5>
+                        <p>GPS-enabled fleet with 24/7 monitoring and insurance coverage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Meet the Founder section -->
+    <section id="founder" class="section grey lighten-4">
+        <div class="container">
+            <h2 class="theme-text center-align">Meet Our Founder</h2>
+            <div class="row">
+                <div class="col s12 m4 center-align">
+                    <img src="images/founder.jpeg" alt="Founder" class="circle responsive-img founder-image">
+                </div>
+                <div class="col s12 m8">
+                    <h4 class="theme-text">Late Shri Maheshgiri Goswami</h4>
+                    <p class="grey-text">Founder & Chairman</p>
+                    <p class="flow-text">With over four decades of experience in the transportation industry, Maheshgiri
+                        Goswami founded the Ramnath Roadways in 1980. His vision of creating a reliable, efficient, and
+                        customer-centric logistics company has transformed into Gujarat's leading transportation service
+                        provider.</p>
+                    <div class="founder-achievements">
+                        <h5 class="theme-text">Achievements & Recognition</h5>
+                        <ul class="achievement-list">
+                            <li><i class="material-icons tiny theme-text">star</i> Pioneer in modernizing Gujarat's
+                                logistics sector</li>
+                            <li><i class="material-icons tiny theme-text">star</i> Recognized for contributions to
+                                regional economic development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section"></section>
+    <div class="container">
+        <h2 style="color: #AE4A84">Our Services</h2>
+        <ul class="collection">
+            <li class="collection-item">Road Transportation</li>
+            <li class="collection-item">Full Truck Load (FTL) Services</li>
+            <li class="collection-item">Part Truck Load (PTL) Services</li>
+            <li class="collection-item">Express Cargo Services</li>
+            <li class="collection-item">Customized Logistics Solutions</li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- Add this before the clients section -->
+    <section id="subsidiaries" class="section grey lighten-4">
+        <div class="container">
+            <h2 class="theme-text center-align">Our Subsidiaries</h2>
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text center-align">Excellence through specialization</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <img src="images/RAMNATH_ROAD.png" alt="Ramnath Roadways" class="responsive-img">
+                        </div>
+                        <div class="card-content center">
+                            <h5>Ramnath Roadways</h5>
+                            <p class="grey-text">Road Transportation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <img src="images/RAMNATH_TRANS.png" alt="Ramnath TransLink" class="responsive-img">
+                        </div>
+                        <div class="card-content center">
+                            <h5>Ramnath TransLink Pvt. Ltd.</h5>
+                            <p class="grey-text">Time-Critical Deliveries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <img src="images/VISHNUDEVAM.png" alt="Vishnudevam Logistics" class="responsive-img">
+                        </div>
+                        <div class="card-content center">
+                            <h5>Vishnudevam Logistics</h5>
+                            <p class="grey-text">Freight Forwarding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <img src="images/SEAPIXEL1.png" alt="Sea Pixels LLP" class="responsive-img">
+                        </div>
+                        <div class="card-content center">
+                            <h5>Sea Pixels LLP</h5>
+                            <p class="grey-text">Maritime Shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Replace the testimonials section with this -->
+    <section id="clients" class="section">
+        <div class="container">
+            <h2 class="theme-text center-align">Our Esteemed Clients</h2>
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text center-align">Trusted by leading companies across India</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <img src="images/kirloskar.png" alt="Kirloskar" class="responsive-img">
+                            <h5>Kirloskar Group</h5>
+                            <p class="grey-text">Engineering & Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <img src="images/Hi-Green-Carbon-Logo.png" alt="Hi-Green Carbon" class="responsive-img">
+                            <h5>Hi-Green Carbon</h5>
+                            <p class="grey-text">Renewable Energy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <img src="images/Final-Gokul-New-Logo.png" alt="Gokul Agro Resources"
+                                class="responsive-img">
+                            <h5>Gokul Agro Resources</h5>
+                            <p class="grey-text">Agro-Processing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <img src="images/windworld.jpg" alt="Wind World" class="responsive-img">
+                            <h5>Wind World</h5>
+                            <p class="grey-text">Renewable Energy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section grey lighten-4">
+        <div class="container">
+            <h2 class="theme-text center-align">Contact Us</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <!-- Update Head Office contact info -->
+                    <div class="contact-card center">
+                        <i class="material-icons large theme-text">location_city</i>
+                        <h5>Head Office</h5>
+                        <p>Opp. Bharat Petrol Pump,</p>
+                        <p>Kuvadava Road,</p>
+                        <p>Rajkot, Gujarat</p>
+                        <p>Phone: <a href="tel:+91 8000043480" class="theme-text">+91 8000043480</a></p>
+                        <p>Email: <a href="mailto:ramnath.roadways@gmail.com" class="theme-text">ramnath.roadways@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <!-- Update Coastal Office contact info -->
+                    <div class="contact-card center">
+                        <i class="material-icons large theme-text">sailing</i>
+                        <h5>Coastal Office</h5>
+                        <p>Sea Pixel Shipping Services LLP,</p>
+                        <p>B2 Basement, Madhuban Complex</p>
+                        <p>PLot No. 128, Sector 8, Gandhidham</p>
+                        <p>Phone: <a href="tel:+91 7801900003" class="theme-text">+91 7801900003</a></p>
+                        <p>Email: <a href="mailto:import@seapixel.co.in" class="theme-text">import@seapixel.co.in</a></p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="contact-card center">
+                        <i class="material-icons large theme-text">share</i>
+                        <h5>Connect with Us</h5>
+                        <!-- Update social links, replace LinkedIn with WhatsApp -->
+                        <div class="social-links">
+                            <a href="#" class="theme-text" target="_blank">
+                                <i class="fab fa-facebook fa-2x m-2"></i>
+                            </a>
+                            <a href="#" class="theme-text" target="_blank">
+                                <i class="fab fa-instagram fa-2x m-2"></i>
+                            </a>
+                            <a href="https://wa.me/918000043480?text=Hi,%20I%20would%20like%20to%20know%20more%20about%20your%20transportation%20services." class="theme-text" target="_blank">
+                                <i class="fab fa-whatsapp fa-2x m-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add before footer -->
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating btn-large theme-bg" id="moveToTop">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+
+    <footer class="page-footer theme-bg">
+        <div class="container center-align">
+            <p>&copy; 2024 RAMNATH GROUP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Import Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize JS components
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sidenav initialization
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            // Close sidenav when a link is clicked
+            var sidenavLinks = document.querySelectorAll('.sidenav a');
+            sidenavLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+                    instance.close();
+                });
+            });
+
+            // Slider initialization
+            var sliderElems = document.querySelectorAll('.slider');
+            var sliderInstances = M.Slider.init(sliderElems, {
+                indicators: true,
+                height: 600,
+                duration: 500,
+                interval: 4000,
+                pause: true,
+                transition: 1000,
+                direction: 'left'
+            });
+
+            // Move to top button functionality
+            var moveToTop = document.getElementById('moveToTop');
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    moveToTop.style.display = "block";
+                } else {
+                    moveToTop.style.display = "none";
+                }
+            };
+
+            moveToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
